@@ -1,0 +1,71 @@
+/* ====== HEADER ====== */
+header {
+  text-align: center;
+  background-color: #111;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* ====== BANNER (LOGO) ====== */
+.banner img {
+  width: 250px; /* ajuste conforme o tamanho do seu banner */
+  height: auto;
+  display: inline-block;
+}
+
+/* ====== MENU ====== */
+.menu {
+  background-color: #111;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* 🔥 centraliza horizontalmente */
+  flex-wrap: wrap; /* quebra linha em telas pequenas */
+  gap: 30px; /* espaço entre itens */
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    width: 180px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu ul li a {
+    font-size: 20px;
+  }
+}
+
+#banner {
+  display: block;           /* transforma em bloco pra centralizar */
+  margin: 0 auto;           /* centraliza horizontalmente */
+  width: 50%;              /* ocupa toda a largura da tela */
+  max-width: 1920px;        /* limite opcional p/ telas enormes */
+  height: 40vh;             /* altura proporcional (40% da tela) */
+  border-radius: 0;         /* opcional: remove arredondamento */
+}
+
+body {
+    background-color: #020000;
+}
